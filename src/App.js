@@ -6,6 +6,7 @@ import {
   Link,
   IconButton,
   Flex,
+  Button,
 } from '@chakra-ui/react';
 import { theme } from './theme';
 import axios from 'axios';
@@ -66,7 +67,7 @@ function App() {
                   </Link>
                 </Text>
               </Box>
-              <Flex pl="2rem" pb="1rem">
+              <Flex pl="2rem" pb="1rem" gap="12px">
                 <IconButton
                   bg="#fff"
                   _hover={{ background: '#fff' }}
@@ -77,6 +78,15 @@ function App() {
                     })
                   }
                 />
+                <Button
+                  bg="#fff"
+                  _hover={{ background: '#fff' }}
+                  onClick={() => {
+                    setData({});
+                  }}
+                >
+                  check for another user
+                </Button>
               </Flex>
             </Box>
           ) : (
