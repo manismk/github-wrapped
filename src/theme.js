@@ -4,8 +4,8 @@ export const theme = extendTheme({
   styles: {
     global: {
       body: {
-        // bg: 'teal.50',
-        color: 'teal.700',
+        bg: '#f3f4fa',
+        color: 'rgb(59, 55, 191)',
         fontFamily: `'inter', sans-serif`,
       },
     },

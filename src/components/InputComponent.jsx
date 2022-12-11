@@ -1,5 +1,6 @@
 import {
   Button,
+  Heading,
   Input,
   InputGroup,
   InputLeftElement,
@@ -16,6 +17,12 @@ export const InputComponent = ({
 }) => {
   return (
     <>
+      <Heading mt="3rem" as="h1" fontSize="48px">
+        #GithubWrapped
+      </Heading>
+      <Text fontSize="20px" fontWeight="600" mt="8px">
+        How did you contribute in 2022
+      </Text>
       <Text mt="5rem">
         Get your Total contriburtion, Active days, longest streak, Most active
         day, month and more
@@ -26,14 +33,14 @@ export const InputComponent = ({
           ref={inputRef}
           fontWeight="600"
           outline="0px"
-          borderColor="teal.900"
+          borderColor="rgb(59, 55, 191)"
           _focus={{
-            borderColor: 'teal.900',
+            borderColor: 'rgb(59, 55, 191)',
             borderWidth: '2px',
             outline: '0px',
             boxShadow: 'none',
           }}
-          _hover={{ borderColor: 'teal.900' }}
+          _hover={{ borderColor: 'rgb(59, 55, 191)' }}
           placeholder="Enter your Github Username"
           onChange={() => {
             error && setError(null);
@@ -47,10 +54,10 @@ export const InputComponent = ({
       )}
       <Button
         mt="1rem"
-        bg="teal.800"
+        bg="rgb(59, 55, 191)"
         color="white"
-        _hover={{ bg: 'teal.800' }}
-        _active={{ bg: 'teal.800' }}
+        _hover={{ bg: 'rgb(59, 55, 191)' }}
+        _active={{ bg: 'rgb(59, 55, 191)' }}
         w="20rem"
         onClick={clickHandler}
         isLoading={isLoading}
