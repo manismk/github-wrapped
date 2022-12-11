@@ -123,7 +123,7 @@ export const Result = ({ data }) => {
                   {data?.maxCount?.date}
                 </Text>
                 <Text fontSize="12px" color="#aaa" fontWeight="600">
-                  Most Activity
+                  Most Activity Day
                 </Text>
               </Flex>
             </Flex>
@@ -156,7 +156,7 @@ export const Result = ({ data }) => {
                   {data?.maxDayCount?.day}
                 </Text>
                 <Text fontSize="12px" color="#aaa" fontWeight="600">
-                  Most Active day
+                  Most Active On
                 </Text>
               </Flex>
             </Flex>
