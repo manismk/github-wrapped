@@ -9,7 +9,6 @@ import {
   Tooltip,
   Filler,
   Legend,
-  Chart,
 } from 'chart.js';
 import { useEffect, useRef, useState } from 'react';
 
@@ -102,7 +101,7 @@ export const MonthWiseGraph = ({ monthData = {} }) => {
     };
 
     setChartData(chartData);
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <>

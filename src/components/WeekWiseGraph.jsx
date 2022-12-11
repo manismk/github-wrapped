@@ -77,7 +77,7 @@ export const WeekWiseGraph = ({ weekData = {} }) => {
     };
 
     setChartData(chartData);
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <>

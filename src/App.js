@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react';
 import {
   ChakraProvider,
   Box,
-  Button,
   Text,
   Link,
   IconButton,
